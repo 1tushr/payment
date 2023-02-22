@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+
+        <section>
+            <h2>User Information</h2>
+            <form>
+                <div>
+                    <label for="name">Name*</label>
+                    <br>
+                    
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Gender*</legend> 
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <label for="address">Address*</label>
+                    <br>
+                    <textarea id="address" name="address" cols="30" rows="7" required>Enter your address</textarea>
+                </div>
+
+                <div>
+                    <label for="email">Email*</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="abc@xyz.com" required>
+                </div>
+
+                <div>
+                    <label for="pincode">Pincode*</label>
+                    <br>
+                    <input type="text" id="pincode" name="pincode" required>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Payment Information</h2>
+            <p>Accepted Cards</p>
+            <img src="https://cardguru.io/assets/credit-card-logos.png" alt="" width="200px">
+            <form>
+                <div>
+                    <label for="card-type">Card Type</label>
+                    <br>
+                    <select id="card-type" name="card-type">
+                        <option value="amex">Amex</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="visa">Visa</option>
+                        <option value="rupay">Rupay</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="card-number">Card Number*</label>
+                    <br>
+                    <input type="number" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+
+                <div>
+                    <label for="expiration-date">Expiration*</label>
+                    <br>
+                    <input type="month" id="expiration-date" name="expiration-date" min="2023-02" required>
+                </div>
+
+                <div>
+                    <label for="cvv">CVV*</label>
+                    <br>
+                    <input type="number" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                </div>
+
+                <button type="submit" class="btn">Pay Now</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>
